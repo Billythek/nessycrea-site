@@ -30,7 +30,7 @@ export default function Contact() {
   };
 
   return (
-    <main className="pt-32 pb-24 px-6">
+    <main className="pt-24 md:pt-32 pb-24 px-4 md:px-6">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <motion.div
@@ -38,15 +38,15 @@ export default function Contact() {
           animate={{ opacity: 1, y: 0 }}
           className="text-center mb-16"
         >
-          <h1 className="font-display text-5xl md:text-6xl font-bold text-charcoal mb-4">
+          <h1 className="font-display text-3xl sm:text-4xl md:text-6xl font-bold text-charcoal mb-4">
             Contactez <span className="text-gradient">Nous</span>
           </h1>
-          <p className="text-charcoal/60 text-lg max-w-2xl mx-auto">
+          <p className="text-charcoal/60 text-base md:text-lg max-w-2xl mx-auto">
             Une question, une demande spéciale ? Nous sommes là pour vous aider.
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-12">
           {/* Contact Info */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}

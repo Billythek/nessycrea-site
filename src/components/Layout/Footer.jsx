@@ -20,14 +20,14 @@ export default function Footer() {
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-gradient-to-b from-amber-warm/10 to-transparent rounded-full blur-3xl" />
       <div className="absolute bottom-0 right-0 w-[400px] h-[200px] bg-gradient-to-tl from-caramel/5 to-transparent rounded-full blur-3xl" />
 
-      <div className="relative max-w-7xl mx-auto px-8 py-12">
+      <div className="relative max-w-7xl mx-auto px-4 md:px-8 py-12">
         {/* Newsletter */}
         <div className="mb-10 pb-10 border-b border-white/10">
           <div className="max-w-2xl mx-auto text-center">
-            <h3 className="font-display text-2xl font-bold mb-3">
+            <h3 className="font-display text-xl md:text-2xl font-bold mb-3">
               Restez informé de nos nouveautés
             </h3>
-            <p className="text-cream-100/60 mb-6">
+            <p className="text-sm md:text-base text-cream-100/60 mb-6">
               Inscrivez-vous à notre newsletter et recevez nos offres exclusives et nouveaux parfums
             </p>
 
@@ -59,7 +59,7 @@ export default function Footer() {
         </div>
 
         {/* Main Footer Content */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
           <div>
             <div className="flex items-center gap-3 mb-4">
@@ -97,7 +97,7 @@ export default function Footer() {
           </div>
 
           {/* Contact */}
-          <div className="md:col-span-2">
+          <div className="sm:col-span-2 md:col-span-2">
             <h4 className="font-display text-lg font-semibold mb-4">Contact</h4>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               <div className="flex items-center gap-2 text-cream-100/60 text-sm">

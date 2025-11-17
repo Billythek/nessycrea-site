@@ -94,7 +94,7 @@ export default function Hero() {
 
         <motion.h1
           variants={itemVariants}
-          className="font-display text-7xl md:text-8xl lg:text-9xl font-bold text-charcoal mb-10 leading-[0.9] tracking-tightest"
+          className="font-display text-5xl sm:text-6xl md:text-8xl lg:text-9xl font-bold text-charcoal mb-10 leading-[0.9] tracking-tightest"
         >
           Illuminez
           <br />
@@ -112,7 +112,7 @@ export default function Hero() {
 
         <motion.p
           variants={itemVariants}
-          className="text-xl md:text-2xl lg:text-[1.65rem] text-charcoal/65 max-w-3xl mx-auto mb-14 leading-relaxed font-light"
+          className="text-base sm:text-lg md:text-2xl lg:text-[1.65rem] text-charcoal/65 max-w-3xl mx-auto mb-14 leading-relaxed font-light px-4"
         >
           Bougies artisanales créées avec passion pour transformer chaque moment
           en une expérience sensorielle <span className="font-medium text-charcoal/80">unique</span> et <span className="font-medium text-charcoal/80">chaleureuse</span>.
@@ -146,7 +146,7 @@ export default function Hero() {
         {/* Stats */}
         <motion.div
           variants={itemVariants}
-          className="mt-24 grid grid-cols-3 gap-12 max-w-3xl mx-auto"
+          className="mt-16 md:mt-24 grid grid-cols-3 gap-4 md:gap-12 max-w-3xl mx-auto px-4"
         >
           {[
             { value: '100%', label: 'Naturel' },
@@ -158,10 +158,10 @@ export default function Hero() {
               whileHover={{ y: -5 }}
               className="text-center group cursor-default"
             >
-              <div className="font-display text-4xl md:text-5xl font-bold text-gradient mb-3 group-hover:scale-110 transition-transform duration-300">
+              <div className="font-display text-2xl sm:text-3xl md:text-5xl font-bold text-gradient mb-2 md:mb-3 group-hover:scale-110 transition-transform duration-300">
                 {stat.value}
               </div>
-              <div className="text-sm font-medium text-charcoal/50 uppercase tracking-wider">
+              <div className="text-xs md:text-sm font-medium text-charcoal/50 uppercase tracking-wider">
                 {stat.label}
               </div>
             </motion.div>

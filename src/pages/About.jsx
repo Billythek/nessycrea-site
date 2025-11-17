@@ -3,9 +3,9 @@ import { Heart, Leaf, Award, Users } from 'lucide-react';
 
 export default function About() {
   return (
-    <main className="pt-32 pb-0">
+    <main className="pt-24 md:pt-32 pb-0">
       {/* Hero */}
-      <section className="section-padding">
+      <section className="section-padding px-4">
         <div className="max-w-4xl mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -15,11 +15,11 @@ export default function About() {
             <span className="inline-block px-4 py-2 bg-cream-200 rounded-full text-sm font-medium text-caramel-dark mb-6">
               Notre Histoire
             </span>
-            <h1 className="font-display text-5xl md:text-6xl font-bold text-charcoal mb-6">
+            <h1 className="font-display text-3xl sm:text-4xl md:text-6xl font-bold text-charcoal mb-6">
               Passion, artisanat et{' '}
               <span className="text-gradient">créativité</span>
             </h1>
-            <p className="text-xl text-charcoal/70 leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl text-charcoal/70 leading-relaxed">
               Depuis 2020, NessyCrea crée des bougies artisanales uniques qui
               transforment votre intérieur en un sanctuaire de bien-être et de
               chaleur.
@@ -29,16 +29,16 @@ export default function About() {
       </section>
 
       {/* Story */}
-      <section className="section-padding bg-cream-100/50">
+      <section className="section-padding bg-cream-100/50 px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-16 items-center">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              <h2 className="font-display text-4xl font-bold text-charcoal mb-6">
+              <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-bold text-charcoal mb-6">
                 Comment tout a commencé
               </h2>
               <div className="space-y-4 text-charcoal/70 leading-relaxed">
@@ -97,7 +97,7 @@ export default function About() {
       </section>
 
       {/* Values */}
-      <section className="section-padding">
+      <section className="section-padding px-4">
         <div className="max-w-6xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -105,10 +105,10 @@ export default function About() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="font-display text-4xl font-bold text-charcoal mb-4">
+            <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-bold text-charcoal mb-4">
               Nos Engagements
             </h2>
-            <p className="text-charcoal/60 text-lg">
+            <p className="text-charcoal/60 text-base md:text-lg">
               Ce qui guide notre travail au quotidien
             </p>
           </motion.div>
@@ -168,18 +168,18 @@ export default function About() {
       </section>
 
       {/* CTA */}
-      <section className="pt-16 pb-0 bg-charcoal text-cream-100 relative overflow-hidden">
+      <section className="pt-16 pb-0 bg-charcoal text-cream-100 relative overflow-hidden px-4">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-gradient-to-b from-amber-warm/10 to-transparent rounded-full blur-3xl" />
-        <div className="relative max-w-3xl mx-auto text-center pb-16">
+        <div className="relative max-w-3xl mx-auto text-center pb-16 md:pb-20">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="font-display text-4xl font-bold mb-6">
+            <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-bold mb-6">
               Prêt à illuminer votre intérieur ?
             </h2>
-            <p className="text-cream-100/60 text-lg mb-8">
+            <p className="text-cream-100/60 text-base md:text-lg mb-8">
               Découvrez notre collection et trouvez la bougie parfaite pour
               votre espace.
             </p>

@@ -30,8 +30,10 @@ export default function ChristmasDecor() {
   const [snowflakes, setSnowflakes] = useState([]);
 
   useEffect(() => {
-    // Générer 15 flocons avec des positions et timings aléatoires
-    const flakes = Array.from({ length: 15 }, (_, i) => ({
+    // Générer moins de flocons sur mobile pour de meilleures performances
+    const isMobile = window.innerWidth < 768;
+    const flakeCount = isMobile ? 8 : 15;
+    const flakes = Array.from({ length: flakeCount }, (_, i) => ({
       id: i,
       delay: Math.random() * 10,
       duration: 15 + Math.random() * 10,

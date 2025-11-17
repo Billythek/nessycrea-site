@@ -37,15 +37,16 @@ export default function Navbar() {
           : 'bg-transparent py-7'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-8 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-4 md:px-8 flex items-center justify-between">
         {/* Logo */}
-        <Link to="/" className="group flex items-center gap-4">
-          <Logo size="md" animated={true} />
+        <Link to="/" className="group flex items-center gap-3">
+          <Logo size="sm" animated={true} className="md:hidden" />
+          <Logo size="md" animated={true} className="hidden md:block" />
           <div className="flex flex-col">
-            <span className="font-display text-2xl font-bold text-charcoal tracking-tight">
+            <span className="font-display text-xl md:text-2xl font-bold text-charcoal tracking-tight">
               NessyCrea
             </span>
-            <span className="text-xs text-caramel-dark/60 font-medium tracking-wider uppercase">
+            <span className="text-[10px] md:text-xs text-caramel-dark/60 font-medium tracking-wider uppercase">
               Bougies Artisanales
             </span>
           </div>
