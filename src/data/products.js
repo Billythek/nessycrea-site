@@ -1,0 +1,127 @@
+export const products = [
+  {
+    id: 1,
+    name: "Bougie Vanille Douce",
+    type: "Gourmand",
+    size: "grand",
+    sizeLabel: "Grand (250g)",
+    price: 24.99,
+    rating: 5,
+    description: "Parfum gourmand de vanille Madagascar, doux et enveloppant. Une fragrance classique qui transforme votre intérieur en sanctuary chaleureux.",
+    image_url: "https://user-gen-media-assets.s3.amazonaws.com/seedream_images/5ff06277-c960-49ff-88c3-80023c260e0d.png",
+    image_color: "#E8D5B7",
+    scent: "Vanille"
+  },
+  {
+    id: 2,
+    name: "Lavande Provence",
+    type: "Relaxation",
+    size: "moyen",
+    sizeLabel: "Moyen (160g)",
+    price: 26.99,
+    rating: 5,
+    description: "Lavande authentique de Provence pour un moment de détente. Favorise la relaxation et crée une ambiance zen dans votre foyer.",
+    image_url: "https://user-gen-media-assets.s3.amazonaws.com/seedream_images/993b049d-633d-48d0-8a2d-71d2ad01fe98.png",
+    image_color: "#D4C5E2",
+    scent: "Lavande"
+  },
+  {
+    id: 3,
+    name: "Eucalyptus Menthe",
+    type: "Naturel",
+    size: "petit",
+    sizeLabel: "Petit (100g)",
+    price: 22.99,
+    rating: 4,
+    description: "Mélange tonifiant d'eucalyptus et menthe fraîche. Parfait pour revitaliser votre espace et purifie l'air naturellement.",
+    image_url: "https://user-gen-media-assets.s3.amazonaws.com/seedream_images/3ac59884-6810-456c-9bd2-191aa9ea7368.png",
+    image_color: "#B8E6D5",
+    scent: "Eucalyptus"
+  },
+  {
+    id: 4,
+    name: "Rose Luxe Premium",
+    type: "Luxe",
+    size: "grand",
+    sizeLabel: "Grand (300g)",
+    price: 34.99,
+    rating: 5,
+    description: "Rose ancienne et musc blanc pour une expérience haut de gamme. Notre création la plus prestigieuse pour moments d'exception.",
+    image_url: "https://user-gen-media-assets.s3.amazonaws.com/seedream_images/6fbd27a9-ef56-4d6b-9c08-e7b811d2454a.png",
+    image_color: "#E8C9D8",
+    scent: "Rose"
+  },
+  {
+    id: 5,
+    name: "Ambre Boisé",
+    type: "Luxe",
+    size: "moyen",
+    sizeLabel: "Moyen (180g)",
+    price: 29.99,
+    rating: 5,
+    description: "Ambre, cèdre et bois de santal pour une atmosphère chaleureuse. Crée une ambiance sophistiquée et apaisante.",
+    image_url: "https://user-gen-media-assets.s3.amazonaws.com/seedream_images/19d07d07-c6e5-4ac2-b8be-45eeb976a10c.png",
+    image_color: "#D4B8A0",
+    scent: "Ambre"
+  },
+  {
+    id: 6,
+    name: "Citron Énergisant",
+    type: "Naturel",
+    size: "petit",
+    sizeLabel: "Petit (90g)",
+    price: 21.99,
+    rating: 4,
+    description: "Citron frais et vivifiant pour démarrer la journée. Recharge d'énergie positive et clarté mentale garanties.",
+    image_url: "https://user-gen-media-assets.s3.amazonaws.com/seedream_images/efdb02f6-d0ec-4715-adfa-c0bebc12804b.png",
+    image_color: "#FFF8DC",
+    scent: "Citron"
+  },
+  {
+    id: 7,
+    name: "Cacao Apaisement",
+    type: "Gourmand",
+    size: "moyen",
+    sizeLabel: "Moyen (170g)",
+    price: 25.99,
+    rating: 5,
+    description: "Cacao riche avec notes de vanille et caramel. Pour les amateurs de gourmandises qui cherchent réconfort et chaleur.",
+    image_url: "https://user-gen-media-assets.s3.amazonaws.com/seedream_images/e72d4d44-95c9-40da-ad26-96f38b9a5d70.png",
+    image_color: "#D2B48C",
+    scent: "Cacao"
+  },
+  {
+    id: 8,
+    name: "Rose & Violette",
+    type: "Relaxation",
+    size: "grand",
+    sizeLabel: "Grand (280g)",
+    price: 27.99,
+    rating: 5,
+    description: "Rose délicate et violette pour une sérénité totale. Parfum poétique pour les moments introspectifs et la méditation.",
+    image_url: "https://user-gen-media-assets.s3.amazonaws.com/seedream_images/d62bf794-ab3e-487f-803d-4f2829015a66.png",
+    image_color: "#E6D5E0",
+    scent: "Rose-Violette"
+  },
+];
+
+export const testimonials = [
+  {
+    id: 1,
+    name: "Marie Dubois",
+    text: "Ses bougies transforment mon intérieur en un havre de paix. Qualité exceptionnelle et durée de vie impressionnante!",
+    rating: 5
+  },
+  {
+    id: 2,
+    name: "Jean Pierre",
+    text: "Je recommande vivement NessyCrea. Les parfums sont authentiques et durables. Un vrai savoir-faire artisanal.",
+    rating: 5
+  },
+  {
+    id: 3,
+    name: "Sophie Martin",
+    text: "Parfait pour les cadeaux! Packaging élégant, produit de qualité supérieure. Devenue ma marque préférée.",
+    rating: 5
+  }
+];

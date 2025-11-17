@@ -1,0 +1,155 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-body text-charcoal bg-cream-50 antialiased;
+    background-image:
+      radial-gradient(ellipse at 20% 20%, rgba(212, 165, 116, 0.08) 0%, transparent 50%),
+      radial-gradient(ellipse at 80% 80%, rgba(222, 184, 135, 0.06) 0%, transparent 50%),
+      radial-gradient(ellipse at 50% 100%, rgba(201, 168, 108, 0.04) 0%, transparent 40%);
+  }
+
+  ::selection {
+    @apply bg-amber-warm/30 text-charcoal;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  .text-gradient {
+    @apply bg-gradient-to-r from-caramel-dark via-amber-warm to-caramel bg-clip-text text-transparent;
+  }
+
+  .text-gradient-gold {
+    @apply bg-gradient-to-r from-honey-dark via-amber-deep to-caramel-rich bg-clip-text text-transparent;
+  }
+
+  .glow-effect {
+    @apply relative;
+  }
+
+  .glow-effect::before {
+    content: '';
+    @apply absolute -inset-4 bg-gradient-to-r from-amber-warm/20 to-caramel-light/20 rounded-full blur-2xl opacity-0 transition-opacity duration-500;
+  }
+
+  .glow-effect:hover::before {
+    @apply opacity-100;
+  }
+
+  .glass {
+    @apply bg-white/70 backdrop-blur-xl border border-white/20 shadow-soft;
+  }
+
+  .card-cosy {
+    @apply bg-cream-100 rounded-3xl p-7 shadow-soft transition-all duration-500 relative overflow-hidden;
+  }
+
+  .card-cosy:hover {
+    @apply shadow-soft-lg -translate-y-2;
+  }
+
+  .card-cosy::before {
+    content: '';
+    @apply absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-caramel/20 to-transparent;
+  }
+
+  .card-cosy::after {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-br from-white/40 to-transparent opacity-0 transition-opacity duration-500 pointer-events-none;
+  }
+
+  .card-cosy:hover::after {
+    @apply opacity-100;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2.5 px-9 py-4 text-cream-50 font-semibold rounded-full shadow-soft transition-all duration-300 relative overflow-hidden;
+    background: linear-gradient(to right, #8B7355, #C9A86C, #C9A77D);
+  }
+
+  .btn-primary:hover {
+    @apply shadow-glow-lg;
+  }
+
+  .btn-primary:active {
+    @apply scale-95;
+  }
+
+  .btn-primary::before {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 -translate-x-full transition-transform duration-700;
+  }
+
+  .btn-primary:hover::before {
+    @apply translate-x-full;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-cream-200/80 text-caramel-dark font-semibold rounded-full border border-caramel/20 transition-all duration-300 backdrop-blur-sm;
+  }
+
+  .btn-secondary:hover {
+    @apply bg-cream-300 border-caramel/40 shadow-soft;
+  }
+
+  .input-cosy {
+    @apply w-full px-6 py-4 bg-cream-100/80 border border-caramel/15 rounded-2xl font-body text-charcoal placeholder:text-charcoal/40 focus:outline-none focus:border-amber-warm focus:ring-4 focus:ring-amber-warm/10 focus:bg-cream-50 transition-all duration-300 backdrop-blur-sm;
+  }
+
+  .section-padding {
+    @apply py-28 px-8 md:px-16 lg:px-24;
+  }
+
+  .section-title {
+    @apply font-display text-4xl md:text-5xl lg:text-6xl font-bold text-charcoal mb-6 tracking-tight;
+  }
+
+  .section-subtitle {
+    @apply text-charcoal/60 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed;
+  }
+}
+
+@layer utilities {
+  .animate-delay-100 {
+    animation-delay: 100ms;
+  }
+  .animate-delay-200 {
+    animation-delay: 200ms;
+  }
+  .animate-delay-300 {
+    animation-delay: 300ms;
+  }
+  .animate-delay-400 {
+    animation-delay: 400ms;
+  }
+  .animate-delay-500 {
+    animation-delay: 500ms;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-cream-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-caramel/40 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-caramel/60;
+}
