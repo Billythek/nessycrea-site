@@ -39,17 +39,17 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-4 md:px-8 flex items-center justify-between">
         {/* Logo */}
-        <Link to="/" className="group flex items-center gap-3">
-          <Logo size="sm" animated={true} className="md:hidden" />
-          <Logo size="md" animated={true} className="hidden md:block" />
-          <div className="flex flex-col">
-            <span className="font-display text-xl md:text-2xl font-bold text-charcoal tracking-tight">
-              NessyCrea
-            </span>
-            <span className="text-[10px] md:text-xs text-caramel-dark/60 font-medium tracking-wider uppercase">
-              Bougies Artisanales
-            </span>
-          </div>
+        <Link to="/" className="group flex items-center overflow-hidden">
+          <img
+            src="/logo-nessycrea.png"
+            alt="NessyCrea"
+            className="h-16 md:h-24 w-auto transition-transform duration-300 group-hover:scale-105"
+            style={{
+              objectFit: 'cover',
+              objectPosition: 'center',
+              transform: 'scale(1.5)'
+            }}
+          />
         </Link>
 
         {/* Desktop Navigation */}

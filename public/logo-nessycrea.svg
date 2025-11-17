@@ -1,32 +1,24 @@
-<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Circle background -->
-  <circle cx="100" cy="100" r="95" fill="#E8DCC8"/>
+<svg width="400" height="200" viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cadre minimaliste -->
+  <rect x="80" y="55" width="240" height="2.5" fill="#8B7355" opacity="0.9"/>
+  <rect x="80" y="142.5" width="240" height="2.5" fill="#8B7355" opacity="0.9"/>
 
-  <!-- Top border line (long, extends beyond sides) -->
-  <rect x="25" y="63" width="150" height="2.5" fill="#8B7355"/>
-
-  <!-- Bottom border line (long, extends beyond sides) -->
-  <rect x="25" y="134.5" width="150" height="2.5" fill="#8B7355"/>
-
-  <!-- Left border line (short, doesn't connect to top/bottom) -->
-  <rect x="25" y="70" width="2.5" height="25" fill="#8B7355"/>
-
-  <!-- Right border line (short, doesn't connect to top/bottom) -->
-  <rect x="172.5" y="70" width="2.5" height="25" fill="#8B7355"/>
-
-  <!-- Bottom left border line (short, doesn't connect to top/bottom) -->
-  <rect x="25" y="105" width="2.5" height="25" fill="#8B7355"/>
-
-  <!-- Bottom right border line (short, doesn't connect to top/bottom) -->
-  <rect x="172.5" y="105" width="2.5" height="25" fill="#8B7355"/>
-
-  <!-- Text paths for cursive handwriting effect -->
+  <!-- Texte "Nessy Créa" avec police cursive élégante -->
   <defs>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&amp;display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&amp;display=swap');
     </style>
   </defs>
 
-  <!-- "Nessy Créa" in elegant cursive -->
-  <text x="100" y="108" font-family="'Great Vibes', 'Brush Script MT', cursive" font-size="42" fill="#8B7355" text-anchor="middle" letter-spacing="2">Nessy Créa</text>
+  <text
+    x="200"
+    y="110"
+    font-family="'Alex Brush', cursive"
+    font-size="52"
+    fill="#8B7355"
+    text-anchor="middle"
+    letter-spacing="2"
+  >
+    Nessy Créa
+  </text>
 </svg>

@@ -1,0 +1,18 @@
+<svg width="400" height="200" viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cadre -->
+  <rect x="50" y="40" width="300" height="5" fill="#8B7355"/>
+  <rect x="50" y="155" width="300" height="5" fill="#8B7355"/>
+  <rect x="50" y="40" width="5" height="30" fill="#8B7355"/>
+  <rect x="345" y="40" width="5" height="30" fill="#8B7355"/>
+  <rect x="50" y="130" width="5" height="30" fill="#8B7355"/>
+  <rect x="345" y="130" width="5" height="30" fill="#8B7355"/>
+
+  <!-- Texte "Nessy Créa" en cursive -->
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&amp;display=swap');
+    </style>
+  </defs>
+
+  <text x="200" y="115" font-family="'Great Vibes', cursive" font-size="65" fill="#8B7355" text-anchor="middle" letter-spacing="3">Nessy Créa</text>
+</svg>
